@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            /* height: 100%; */
+        }
+
+        /*-------------for header in first part------------*/
+
+        .jk {
+            background-color: #050A1E;
+            font-size: 20px;
+            height: 60px;
+            display: flex;
+
+        }
+
+        .opop {
+            color: white;
+            background-color: #050A1E;
+            display: inline;
+            font-size: 0px;
+        }
+
+        .opop i {
+            display: flex;
+            margin-top: 8px;
+            font-size: 45px;
+            margin-left: 7px;
+            border: 2px;
+        }
+
+        .abcd {
+            margin-top: px;
+            margin-left: 10px;
+            display: inline;
+            position: relative;
+            height: 30px;
+
+        }
+
+        #s1 {
+            font-size: 19.9px;
+            height: 33px;
+            margin-left: 15px;
+            padding-top: 5px;
+            align-items: center;
+            border-top-left-radius: 7px;
+            border-bottom-left-radius: 7px;
+        }
+
+        #search {
+            margin-left: -5px;
+            height: 33px;
+            width: 600px;
+            padding-top: 9px;
+            padding-bottom: 0px;
+            font-size: 18px;
+            padding-left: 15px;
+            padding-top: 7px;
+        }
+
+        #FA {
+            font-size: 22px;
+            color: white;
+            height: 25px;
+            width: 30px;
+            margin-top: 1px;
+            margin-left: -6px;
+            padding-left: 5px;
+            padding-top: 6px;
+            background-color: rgb(212, 137, 50);
+            border-top-right-radius: 7px;
+            border-bottom-right-radius: 7px;
+        }
+
+        #fg {
+            justify-content: center;
+            margin-left: 13px;
+            margin-top: 20px;
+            height: 22px;
+            width: 33px;
+        }
+
+        #Mor {
+            font-size: 20px;
+            color: white;
+
+        }
+
+        .app {
+            font-size: 20px;
+            margin-left: 32px;
+            margin-top: 10px;
+        }
+
+        .app:hover {
+            border: 1px solid white;
+            border-radius: 3px;
+            padding: 5px;
+        }
+
+        #pare {
+            font-size: 18px;
+
+        }
+
+        a {
+            display: inline;
+            text-decoration: none;
+            color: white;
+        }
+
+        #ocoo {
+            margin: 3px;
+            margin-top: 5px;
+            margin-left: 10px;
+            margin-right: 3px;
+        }
+
+        .sign-in {
+            position: absolute;
+            top: 10px;
+            right: 8px;
+            font-size: 22px;
+
+        }
+
+        .sign-in:hover {
+            border: 1px solid white;
+            border-radius: 3px;
+            padding: 5px;
+        }
+
+        /* let's start navigation  bar from here */
+
+        nav {
+            background-color: #222A3E;
+            color: white;
+            height: 25px;
+            display: flex;
+        }
+
+        ul li {
+            display: inline;
+            color: white;
+            margin-right: 30px;
+            margin-top: 10px;
+            margin-bottom: 0px;
+            padding-top: 3px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #bar {
+            margin-left: 3px;
+        }
+
+        /* contantet  */
+        .middle{ background-color: #D3D3D3;
+            padding-top: 12px;
+            padding-bottom: 15px;
+
+        }
+        table img {
+            height: 500px;
+            width: auto;
+        }
+
+        tr img {
+            display: flex;
+            size: 200px;
+        }
+
+        .jkl {
+            border: 1px solid black;
+            border-radius: 5px;
+            height: 170px;
+            width: 185px;
+        }
+
+        .con {
+            text-decoration: none;
+            color: black;
+        }
+
+        #con1 {
+            font-size: 12px;
+        }
+
+        .top-img {
+            background-color: #BCB1B1;
+            padding: 5px;
+            border-radius: 7px;
+
+        }
+
+        .top-img-2 {
+
+            background-color: #BCB1B1;
+            padding: 5px;
+            border-radius: 7px;
+        }
+
+        td img {
+            margin: 5px;
+
+        }
+
+        .dop-s {
+           
+            display: flex;
+            justify-content: center;
+            justify-content: space-evenly;
+            margin-left: 5px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header>
+        <div class="jk">
+            <div class="opop">
+                <i class="fa-brands fa-amazon" id=""></i>
+            </div>
+            <div class="abcd">
+                <select name="select" id="s1">
+                    <option value="all">All</option>
+                </select>
+                <input type="search" name="search" id="search" placeholder="Search Here">
+
+                <i class="fa-solid fa-magnifying-glass" id="FA"></i>
+
+                <img src="flag.png" alt="" id="fg">
+                <i class="fa-solid fa-caret-down" id="Mor"></i>
+            </div>
+
+            <div class="app"><a href="Create Account.html">
+                    <p id="pare">Create</p>Account
+                </a></div>
+
+
+            <div class="sign-in">
+                <a href="sign in.html"><i class="fa-regular fa-circle-user" id="ocoo"></i>Sign-in</a>
+            </div>
+        </div>
+
+        <!--let's start navigation  bar from here-->
+        <nav>
+
+            <ul>
+                <li> <i class="fa-solid fa-bars" id="bar"></i> All</li>
+                <li><a href=""> About Us </a></li>
+                <li><a href="mobile.html">Mobile</a></li>
+                <li><a href="Fashion.html">Fshion</a></li>
+                <li><a href="Electronics.html">Electronic</a></li>
+                <li><a href="Beauty.html">Beauty</a></li>
+                <li><a href="home&kichen.html">Home & Kichen</a> </li>
+                <li><a href="Shoes.html">Shoes</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <!-- ----------------------contantet ----------------------->
+    <div class="middle">
+        <div class="dop-s">
+            <table class="top-img">
+                <tr>
+                    <td>
+                        <a href="sign in.html" id=""><img src="mancato.jpg" alt="" class="jkl"></a>
+                    </td>
+                    <td>
+                        <a href="sign in.html" id=""><img src="whopelto.jpg" alt="" class="jkl"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="con1"><a href="sign in.html" class="con"><strong>Campus </strong> <br>Campus Men's CATO Walking
+                            Shoes<br>
+                            <b> ₹298</b></a>
+                    </td>
+                    <td id="con1"><a href="sign in.html" class="con"><strong>Plaeto </strong> <br>Plaeto Women's Block 5
+                            Multiplay<br>
+                            Sneakers<br><b> ₹379</b></a>
+                    </td>
+                </tr>
+            </table>
+            <table class="top-img-2">
+                <tr>
+                    <td>
+                        <a href="sign in.html" id=""><img src="noniva'.jpg" alt="" class="jkl"></a>
+                    </td>
+                    <td>
+                        <a href="sign in.html" id=""><img src="ketmart.jpg" alt="" class="jkl"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="con1"><a href="sign in.html" class="con"><strong>Nivia </strong> <br>Nivia HY-Court 2.0 Badminton
+                            Shoe<br>
+                            <b> ₹1,299</b></a>
+                    </td>
+                    <td id="con1"><a href="sign in.html" class="con"><strong>ketmart </strong> <br> ketmart Mens, Womens Water
+                            Shoes
+                            <br>
+                            <b>₹399 </b></a>
+                    </td>
+                </tr>
+            </table>
+            <table class="top-img-2">
+                <tr>
+                    <td>
+                        <a href="sign in.html" id=""><img src="spexra.jpg" alt="" class="jkl"></a>
+                    </td>
+                    <td>
+                        <a href="sign in.html" id=""><img src="nike raj.jpg" alt="" class="jkl"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="con1"><a href="sign in.html" class="con"><strong>SPARX</strong> <br> SPARX Mens Sx0675gWalking Shoe
+                            <br>₹749 </b></a>
+                    </td>
+                    <td id="con1"><a href="sign in.html" class="con"><strong>NIKE </strong> <br> Men Contrast Stitching
+                            Cargo
+                            <br>
+                            <b>₹3,524</b></a>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+
+        <div class="dop-s">
+            <table class="top-img">
+                <tr>
+                    <td>
+                        <a href="sign in.html" id=""><img src="black .jpg" alt="" class="jkl"></a>
+                    </td>
+                    <td>
+                        <a href="sign in.html" id=""><img src="enerio.jpg" alt="" class="jkl"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="con1"><a href="sign in.html" class="con"><strong> Symactive </strong> <br>Amazon Brand - Symactive Mens
+                            <br>FanaticRunning Shoe <br>
+                            <b> ₹ ₹619</b></a>
+                    </td>
+                    <td id="con1"><a href="sign in.html" class="con"><strong>Energio </strong> <br>Amazon Brand - Symactive Mens
+                            <br>Energio Walking Shoe<br><b>₹559</b></a>
+                    </td>
+                </tr>
+            </table>
+            <table class="top-img-2">
+                <tr>
+                    <td>
+                        <a href="sign in.html" id=""><img src="opsnek.jpg" alt="" class="jkl"></a>
+                    </td>
+                    <td>
+                        <a href="sign in.html" id=""><img src="formal.jpg" alt="" class="jkl"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="con1"><a href="sign in.html" class="con"><strong>Sneakers </strong> <br>Amazon Brand - Symbol Mens
+                            <br>Streak Sneakers<br>
+                            <b> ₹619</b></a>
+                    </td>
+                    <td id="con1"><a href="sign in.html" class="con"><strong>Amazon Brand </strong> <br> Amazon Brand - Symbol Mens
+                            <br>SantiagoFormal Shoes
+                            <br>
+                            <b>₹479 </b></a>
+                    </td>
+                </tr>
+            </table>
+            <table class="top-img-2">
+                <tr>
+                    <td>
+                        <a href="sign in.html" id=""><img src="ame lofer.jpg" alt="" class="jkl"></a>
+                    </td>
+                    <td>
+                        <a href="sign in.html" id=""><img src="khohli.jpg" alt="" class="jkl"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="con1"><a href="sign in.html" class="con"><strong>Amazon Brand </strong> <br> Amazon Brand - Symbol Mens
+                            <br>JarethDriving Style Loafer
+                            <br>₹559</b></a>
+                    </td>
+                    <td id="con1"><a href="sign in.html" class="con"><strong>Prospera </strong> <br> Prospera Formal Shoes
+                            <br>
+                            <b>₹649</b></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!-- agbkbadgvldajh -->
+
+        <div class="dop-s">
+            <table class="top-img">
+                <tr>
+                    <td>
+                        <a href="sign in.html" id=""><img src="doctor expert.jpg" alt="" class="jkl"></a>
+                    </td>
+                    <td>
+                        <a href="sign in.html" id=""><img src="pumaa1.jpg" alt="" class="jkl"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="con1"><a href="sign in.html" class="con"><strong>DOCTOR EXTRA SOFT </strong> <br>DOCTOR EXTRA SOFT
+                            Flexible Memory
+                            <br>Foam Women's Shoes for Walking <br>
+                            <b> ₹899</b></a>
+                    </td>
+
+                    <td id="con1"><a href="sign in.html" class="con"><strong> Puma </strong> <br>Puma Womens Enzo 2 Metal WN's
+                            <br>Running Shoe<br>
+                            <b> ₹3,024</b></a>
+                    </td>
+                </tr>
+            </table>
+            <table class="top-img-2">
+                <tr>
+                    <td>
+                        <a href="sign in.html" id=""><img src="reebook1.jpg" alt="" class="jkl"></a>
+                    </td>
+                    <td>
+                        <a href="sign in.html" id=""><img src="bataoppppp.jpg" alt="" class="jkl"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="con1"><a href="sign in.html" class="con"><strong>Reebok </strong> <br>Reebok Mens Austin 2.0 M
+                            <br> Sneaker Running<br><b>₹1,379</b></a>
+                    </td>
+
+                    <td id="con1"><a href="sign in.html" class="con"><strong>Bata</strong> <br>Bata Mens Wonder ECasual Shoe
+
+                            <br>
+                            <b>₹479 </b></a>
+                    </td>
+                </tr>
+            </table>
+            <table class="top-img-2">
+                <tr>
+                    <td>
+                        <a href="sign in.html" id=""><img src="puma sport.jpg" alt="" class="jkl"></a>
+                    </td>
+                    <td>
+                        <a href="sign in.html" id=""><img src="ashian for gairl.jpg" alt="" class="jkl"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="con1"><a href="sign in.html" class="con"><strong>Puma </strong> <br> Puma Unisex-Adult Sf Drift
+                            <br>Cat 5 Ultra Sneaker
+                            <br>₹3,269</b></a>
+                    </td>
+                    <td id="con1"><a href="sign in.html" class="con"><strong>ASIAN </strong> <br> ASIAN Women's Elasto-02
+                            <br>Knitted,Sports,Walking,Slipon <br>Shoes
+                            <b> ₹685</b></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+</body>
+
+</html>

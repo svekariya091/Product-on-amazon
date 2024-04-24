@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home & Kichen</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            /* height: 100%; */
+        }
+
+        /*-------------for header in first part------------*/
+
+        .jk {
+            background-color: #050A1E;
+            font-size: 20px;
+            height: 60px;
+            display: flex;
+
+        }
+
+        .opop {
+            color: white;
+            background-color: #050A1E;
+            display: inline;
+            font-size: 0px;
+        }
+
+        .opop i {
+            display: flex;
+            margin-top: 8px;
+            font-size: 45px;
+            margin-left: 7px;
+            border: 2px;
+        }
+
+        .abcd {
+            margin-top: px;
+            margin-left: 10px;
+            display: inline;
+            position: relative;
+            height: 30px;
+
+        }
+
+        #s1 {
+            font-size: 19.9px;
+            height: 33px;
+            margin-left: 15px;
+            padding-top: 5px;
+            align-items: center;
+            border-top-left-radius: 7px;
+            border-bottom-left-radius: 7px;
+        }
+
+        #search {
+            margin-left: -5px;
+            height: 33px;
+            width: 600px;
+            padding-top: 9px;
+            padding-bottom: 0px;
+            font-size: 18px;
+            padding-left: 15px;
+            padding-top: 7px;
+        }
+
+        #FA {
+            font-size: 22px;
+            color: white;
+            height: 25px;
+            width: 30px;
+            margin-top: 1px;
+            margin-left: -6px;
+            padding-left: 5px;
+            padding-top: 6px;
+            background-color: rgb(212, 137, 50);
+            border-top-right-radius: 7px;
+            border-bottom-right-radius: 7px;
+        }
+
+        #fg {
+            justify-content: center;
+            margin-left: 13px;
+            margin-top: 20px;
+            height: 22px;
+            width: 33px;
+        }
+
+        #Mor {
+            font-size: 20px;
+            color: white;
+
+        }
+
+        .app {
+            font-size: 20px;
+            margin-left: 32px;
+            margin-top: 10px;
+        }
+
+        .app:hover {
+            border: 1px solid white;
+            border-radius: 3px;
+            padding: 5px;
+        }
+
+
+        #pare {
+            font-size: 18px;
+
+        }
+
+        .a {
+            display: inline;
+            text-decoration: none;
+            color: white;
+        }
+
+        #ocoo {
+            margin: 3px;
+            margin-top: 5px;
+            margin-left: 10px;
+            margin-right: 3px;
+        }
+
+        .sign-in {
+            position: absolute;
+            top: 10px;
+            right: 8px;
+            font-size: 22px;
+
+        }
+
+        .sign-in:hover {
+            border: 1px solid white;
+            border-radius: 3px;
+            padding: 5px;
+        }
+
+        /* let's start navigation  bar from here */
+
+        nav {
+            background-color: #222A3E;
+            color: white;
+            height: 25px;
+            display: flex;
+        }
+
+        ul li {
+            display: inline;
+            color: white;
+            margin-right: 30px;
+            margin-top: 10px;
+            margin-bottom: 0px;
+            padding-top: 3px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #bar {
+            margin-left: 3px;
+        }
+
+        /* <!-- ------------------------content  CSS- ---------------------> */
+        .oscar {
+            background-color:  #D3D3D3;
+           
+            padding: 15px;
+        }
+
+        img {
+            height: 275px;
+            width: 242px;
+        }
+
+        td {
+            margin: 3px;
+            padding: 10px;
+        }
+
+        td a {
+            text-decoration: none;
+            color: black;
+        }
+        table{  background-color: #D3D3D3;
+            padding:  20px;
+        }
+        table img{
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="jk">
+            <div class="opop">
+                <i class="fa-brands fa-amazon" id=""></i>
+            </div>
+            <div class="abcd">
+                <select name="select" id="s1">
+                    <option value="all">All</option>
+                </select>
+                <input type="search" name="search" id="search" placeholder="Search Here">
+
+                <i class="fa-solid fa-magnifying-glass" id="FA"></i>
+
+                <img src="flag.png" alt="" id="fg">
+                <i class="fa-solid fa-caret-down" id="Mor"></i>
+            </div>
+
+            <div class="app"><a href="Create Account.html" class="a">
+                    <p id="pare">Create</p>Account
+                </a></div>
+
+
+            <div class="sign-in">
+                <a href="sign in.html" class="a"><i class="fa-regular fa-circle-user" id="ocoo"></i>Sign-in</a>
+            </div>
+        </div>
+
+        <!--let's start navigation  bar from here-->
+        <nav>
+
+            <ul>
+                <li> <i class="fa-solid fa-bars" id="bar"></i> All</li>
+                <li><a href=""> About Us </a></li>
+                <li><a href="mobile.html">Mobile</a></li>
+                <li><a href="Fashion.html">Fshion</a></li>
+                <li><a href="Electronics.html">Electronic</a></li>
+                <li><a href="Beauty.html">Beauty</a></li>
+                <li><a href="home&kichen.html">Home & Kichen</a> </li>
+                <li><a href="Shoes.html">Shoes</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <!-- ------------------------content ---------------------->
+   
+  <div class="oscar">
+    <table>
+        <tr>
+            <td><a href="sign in.html"><img src="VERPACO.jpg"> <br>Premium Bone China 21-Piece Dinner Set | 21 Pieces for
+                    Family of 6
+                    <br><b>₹3,999</b></a></td>
+
+            <td><a href="sign in.html"><img src="atomspro.jpg"><br>atomberg Renesa Enzel 1200mm BLDC Motor 5 Star Rated Sleek
+                    Ceiling Fans with Remote <br> <b>₹3,999</b></a></td>
+            <td><a href="sign in.html"><img src="basic fan.jpg"><br>AmazonBasics High Speed Table Fan for Cooling with
+                    Automatic Oscillation (400 mm, 55W, White) <br><b> ₹2,500</a></b></td>
+            <td><img src="coooler.jpg"><br>atomberg Efficio Exhaust Fan (250mm) with BLDC Motor | Easy to Clean | 1+1 Year Warranty (Black) <br><b>₹2,599</b></a>
+            </td>
+            </td>
+
+        </tr>
+        <tr>
+            <td><a href="sign in.html"><img src="BADE sofa.jpg"><br>Amazon Brand - Solimo Natural Bounty 144 TC 100% Cotton Single Bedsheet with One Pillow Cover, Soft and Smooth (Peacock Feather, Teal and Mustard Yellow) <br><b>₹439</b></a></td>
+            <td><a href="sign in.html"><img src="WALLclock.jpg"> <br>TRENDSTUBE Azan Design Wall Clock for Home Bedroom Office Living Room Watch 
+                ₹299 <br><b> ₹299</b></a></td>
+            <td><a href="sign in.html"><img src="tipay.jpg"><br>ABOUT SPACE Coffee Table - Space Saving Tipoy for Living Room with Magazine Rack 
+                <br><b>₹2,599</b></a></td>
+            <td><a href="sign in.html"><img src="LOKER.jpg "><br>Yale Large Security Safe with Pincode Access | Home Electronic Locker | Manual Key | Digital Pin <br><b>₹7,499</b></a>
+            </td>
+
+        </tr>
+        <tr>
+            <td><a href="sign in.html"><img src="JULO.jpg"><br>Kaushalendra Hammock Swing for Adult - Hanging Chair with Stand, Indoor Jhula, Heavy Duty, 150 kg Capacity<br><b>₹11,305</b></a></td>
+            <td><a href="sign in.html"><img
+                        src="HOMEBICYCLE.jpg"><br>Flexnest Flexbike Lite | Smart Bluetooth Exercise Cycle for home with 500+ Live Classes, 100+ Virtual Rides on App <br><b> ₹21,998</b></a></td>
+            <td><a href="sign in.html"><img src="Small Cooler.jpg"><br>Symphony Siesta 70 XL Desert Air Cooler For Home with Honeycomb Pads, Powerful Fan <br><b>₹10,451</b></a></td>
+            <td><a href="sign in.html"><img src="HULL Water.jpg"> <br>HUL Pureit Advanced Pro Mineral RO+UV 6 stage wall mounted counter top black 7L Water Purifier <br><b> ₹9,490</b> </a></td>
+
+        </tr>
+
+
+    </table>
+</div>
+</body>
+
+</html>

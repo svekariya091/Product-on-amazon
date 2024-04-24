@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+ * {
+            margin: 0px;
+            padding: 0px;
+            /* height: 100%; */
+        }
+
+        /*-------------for header in first part------------*/
+
+        .jk {
+            background-color: #050A1E;
+            font-size: 20px;
+            height: 60px;
+            display: flex;
+
+        }
+
+        .opop {
+            color: white;
+            background-color: #050A1E;
+            display: inline;
+            font-size: 0px;
+        }
+
+        .opop i {
+            display: flex;
+            margin-top: 8px;
+            font-size: 45px;
+            margin-left: 7px;
+            border: 2px;
+        }
+
+        .abcd {
+            margin-top: px;
+            margin-left: 10px;
+            display: inline;
+            position: relative;
+            height: 30px;
+
+        }
+
+        #s1 {
+            font-size: 19.9px;
+            height: 33px;
+            margin-left: 15px;
+            padding-top: 5px;
+            align-items: center;
+            border-top-left-radius: 7px;
+            border-bottom-left-radius: 7px;
+        }
+
+        #search {
+            margin-left: -5px;
+            height: 33px;
+            width: 600px;
+            padding-top: 9px;
+            padding-bottom: 0px;
+            font-size: 18px;
+            padding-left: 15px;
+            padding-top: 7px;
+        }
+
+        #FA {
+            font-size: 22px;
+            color: white;
+            height: 25px;
+            width: 30px;
+            margin-top: 1px;
+            margin-left: -6px;
+            padding-left: 5px;
+            padding-top: 6px;
+            background-color: rgb(212, 137, 50);
+            border-top-right-radius: 7px;
+            border-bottom-right-radius: 7px;
+        }
+
+        #fg {
+            justify-content: center;
+            margin-left: 13px;
+            margin-top: 20px;
+            height: 22px;
+            width: 33px;
+        }
+
+        #Mor {
+            font-size: 20px;
+            color: white;
+
+        }
+
+        .app {
+            font-size: 20px;
+            margin-left: 32px;
+            margin-top: 10px;
+        }
+
+        .app:hover {
+            border: 1px solid white;
+            border-radius: 3px;
+            padding: 5px;
+        }
+
+        #pare {
+            font-size: 18px;
+
+        }
+
+        a {
+            display: inline;
+            text-decoration: none;
+            color: white;
+        }
+
+        #ocoo {
+            margin: 3px;
+            margin-top: 5px;
+            margin-left: 10px;
+            margin-right: 3px;
+        }
+
+        .sign-in {
+            position: absolute;
+            top: 10px;
+            right: 8px;
+            font-size: 22px;
+
+        }
+
+        .sign-in:hover {
+            border: 1px solid white;
+            border-radius: 3px;
+            padding: 5px;
+        }
+
+        /* let's start navigation  bar from here */
+
+        nav {
+            background-color: #222A3E;
+            color: white;
+            height: 25px;
+            display: flex;
+        }
+
+        ul li {
+            display: inline;
+            color: white;
+            margin-right: 30px;
+            margin-top: 10px;
+            margin-bottom: 0px;
+            padding-top: 3px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #bar {
+            margin-left: 3px;
+        }
+
+        /*containt*/
+        .oscar {
+            background-color:  #D3D3D3;
+           
+            padding: 15px;
+        }
+
+        img {
+            height: 275px;
+            width: 242px;
+        }
+
+        td {
+            margin: 3px;
+            padding: 10px;
+        }
+
+        td a {
+            text-decoration: none;
+            color: black;
+        }
+        table{  background-color: #D3D3D3;
+            padding:  20px;
+        }
+        table img{
+            border-radius: 10px;
+        }
+
+</style>
+<body>
+    <header>
+        <div class="jk">
+            <div class="opop">
+                <i class="fa-brands fa-amazon" id=""></i>
+            </div>
+            <div class="abcd">
+                <select name="select" id="s1">
+                    <option value="all">All</option>
+                </select>
+                <input type="search" name="search" id="search" placeholder="Search Here">
+
+                <i class="fa-solid fa-magnifying-glass" id="FA"></i>
+
+                <img src="flag.png" alt="" id="fg">
+                <i class="fa-solid fa-caret-down" id="Mor"></i>
+            </div>
+
+            <div class="app"><a href="Create Account.html">
+                    <p id="pare">Create</p>Account
+                </a></div>
+
+
+            <div class="sign-in">
+                <a href="sign in.html"><i class="fa-regular fa-circle-user" id="ocoo"></i>Sign-in</a>
+            </div>
+        </div>
+
+        <!--let's start navigation  bar from here-->
+        <nav>
+
+            <ul>
+                <li> <i class="fa-solid fa-bars" id="bar"></i> All</li>
+                <li><a href=""> About Us </a></li>
+                <li><a href="mobile.html">Mobile</a></li>
+                <li><a href="Fashion.html">Fshion</a></li>
+                <li><a href="Electronics.html">Electronic</a></li>
+                <li><a href="Beauty.html">Beauty</a></li>
+                <li><a href="home&kichen.html">Home & Kichen</a> </li>
+                <li><a href="Shoes.html">Shoes</a></li>
+            </ul>
+
+        </nav>
+    </header>
+<!-- -------------------------------containt------------------ -->
+
+<div class="oscar">
+    <table>
+        <tr>
+            <td><a href="sign in.html"><img src="macup kit.jpg"> <br>NewClick BEAUTY 6 In 1 Combo Kit - Foundation, Primer, Liquid Concealer, Loose Powder, Compact Powder 
+                    <br><b>₹249</b></a></td>
+
+            <td><a href="sign in.html"><img src="lakshmi.jpg"><br>Lakshmi Krishna Combo of Hair Oil -200ml, Forehead Gel -50g, and Conditioning Shampoo -200ml <br> <b>₹1,199</b></a></td>
+            <td><a href="sign in.html"><img src="G$U macup.jpg"><br>G4U Makeup Kit For Women & Girls With Eyeshadow | Foundation | Lipsticks | Compact |<br><b> ₹549</a></b></td>
+            <td><a href="sign in.html"><img src="WHIMASI macup.jpg"><br>Whimsy Makeup Kit for kids, Preteen and Teen Girls | Girls safe Makeup Set | skin friendly Children Makeup Kit | <br><b>₹2,450</b></a>
+            </td>
+            </td>
+
+        </tr>
+        <tr>
+            <td><a href="sign in.html"><img src="NOYmi3.jpg"><br>Noymi 3 in 1 Shaving Machine | Beard Trimmer for men with Waterproof IPX7 technology |  <br><b>₹1,424</b></a></td>
+            <td><a href="sign in.html"><img src="Bath body_.jpg" style="width: auto; margin-left: 65px;"> <br>Bath and Body Works Dark Kiss Ultimate Hydration Body Cream <br><b> ₹1,599</b></a></td>
+            <td><a href="sign in.html"><img src="Kibiy_.jpg"><br>Kibiy Head Shaver for Men, Upgrade 5-in-1 Mens Electric Shaver Bald Head Shaver Cordless Electric Razor for Men IPX7
+                <br><b>₹7,264</b></a></td>
+            <td><a href="sign in.html"><img src="vega bettry.jpg "><br>Vega Battery Powered SmartOne Series S2 Beard Trimmer for Men, 160 mins Runtime<br><b>₹899</b></a>
+            </td>
+
+        </tr>
+        <tr>
+            <td><a href="sign in.html"><img src="avenu.jpg"><br>Park Avenue Cool Blue Men's Grooming Essential Kit (7 Items in the set)<br><b> ₹550</b></a></td>
+            <td><a href="sign in.html"><img
+                        src="botanic_.jpg"><br>Botanic Hearth British Rose & Almond Body Wash with Shea Butter, Sweet Almond Oil | Moisturizing Body Wash for Softer<br><b>₹280</b></a></td>
+            <td><a href="sign in.html"><img src="latus.jpg"><br>Lotus Professional PHYTORx ANTI-BLEMISH CREME | Skin clarifying | Brightening | Dark spots & acne scars<br><b>₹825</b></a></td>
+            <td><a href="sign in.html"><img src="insite_.jpg"> <br>Insight Cosmetics Pro Concealer Palette-Concealer|Conceal |Correct |Contour |WaterProof |Crease Resistance  <br><b>₹210</b> </a></td>
+
+        </tr>
+
+
+    </table>
+</div>
+
+</body>
+</html>
