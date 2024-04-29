@@ -1,0 +1,79 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Create Account</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color: rgb(24, 24, 24);
+            font-size: 20px;
+            justify-content: center;
+            /* background: url(shivam\ amazon.jpg) no-repeat center/cover; */
+            
+        }
+        div{
+            align-items: center;
+            height: 450px;
+            width: 400px;
+        }
+        .mid{
+            background-color: rgb(34, 32, 32);
+            border: 1px solid white;
+            border-radius: 10px;
+            color: white;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            margin-top: 50px; 
+            padding-top: 5px;
+            padding-left: 15px;
+
+        }
+        input{margin: 10px;
+            border-radius: 30px;
+            border-color: blue;
+        }
+        .abc{
+            margin: 10px;
+            font-size: 15px;
+        }
+        .btn{
+            background-color: rgb(220, 163, 63);
+            width: 300px;
+            height: 40px;
+            align-items: center;
+        }
+        
+        
+    </style>
+    <body>
+        
+        
+        <div class="mid">
+            <h2>Create Account</h2><br>
+            <p>Your Name</p>
+            <input type="text" name="text" id="namre" required >
+            <p>Mobile Number</p>
+            <select name="Number" id="Number">
+                <option value="Number">91</option>
+            </select>
+            <input type="number" name="number" id="num" required>
+            <p>Email Id</p>
+            <input type="email" name="email" id="email" required>
+            <p>Password</p>
+            <input type="password" name="password" id="pass">
+
+            <p class="abc">We will send you a text to verify your phone.
+                Message and Data rates may apply.</p>
+                
+                <button class="btn">Continue</button>
+        </div>
+    </body>
+    </html>
